@@ -1,0 +1,46 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "id": "@id",
+    "schema": "https://schema.org",
+    "type": "@type",
+    "name": "schema:name",
+    "description": "schema:description",
+    "identifier": "schema:identifier",
+
+    "VerifiableCredential": {
+      "@id": "schema:VerifiableCredential",
+      "@context": {
+        "id": "schema:String",
+        "issuer": {
+          "@id": "schema:issuer"
+        },
+        "issuanceDate": "schema:String",
+        "credentialSubject": {
+          "@id": "schema:credentialSubject"
+        }
+      }
+    },
+    "created": {
+      "@id": "schema:created"
+    },
+    "proofPurpose": {
+      "@id": "schema:proofPurpose"
+    },
+    "verificationMethod": {
+      "@id": "schema:verificationMethod"
+    },
+    "proof": {
+      "@id": "schema:proof",
+      "@context": { "id": "schema:String", "jws": "schema:String" }
+    },
+    "VerifiablePresentation": {
+      "@id": "schema:VerifiablePresentation",
+      "@context": {
+        "id": "schema:String",
+        "holder": "schema:holder"
+      }
+    },
+    "challenge": "schema:challenge"
+  }
+}
