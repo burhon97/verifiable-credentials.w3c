@@ -2,8 +2,30 @@
 
 ```
 $ git clone https://github.com/burhon97/verifiable-credentials.w3c.git
+$ cd verifiable-credentials.w3c
 $ npm install
 ```
+Run command for create verifiable credential
+```
+node create.js
+```
+
+Run command for create verifiable presentation
+```
+node createPresentation.js
+```
+
+Run command for verify credential
+```
+node verifyCredential.js
+```
+
+Run command for verify presentation
+```
+node verifyPresentation.js
+```
+
+
 
 ## Create Verifiable Credential 
 
