@@ -36,4 +36,4 @@ export const resultCredential = await verifiable.credential.create({
   }),
 });
 
-// console.log("create credential: ", resultCredential);
+console.log("create credential: ", resultCredential);

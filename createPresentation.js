@@ -24,4 +24,5 @@ export const resultPresentation = await verifiable.presentation.create({
   }),
 });
 
-// console.log("create presentation: ", resultPresentation);
+console.log("create presentation: ", resultPresentation);
+

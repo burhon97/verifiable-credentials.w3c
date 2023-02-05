@@ -10,4 +10,6 @@ const result = await verifiable.credential.verify({
   suite: [new JsonWebSignature()],
 });
 
-// console.log("verify credential: ", result);
+console.log("verify credential: ", result);
+
+
