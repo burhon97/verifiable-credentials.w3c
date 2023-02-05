@@ -24,8 +24,9 @@ Run command for verify presentation
 ```
 node verifyPresentation.js
 ```
+-----------------------------------------------------------
 
-
+# Usage
 
 ## Create Verifiable Credential 
 
