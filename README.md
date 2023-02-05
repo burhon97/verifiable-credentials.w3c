@@ -48,4 +48,41 @@ export const resultCredential = await verifiable.credential.create({
 
 console.log("create credential: ", resultCredential);
 
+// result
+// create credential:  {
+//   items: [
+//     {
+//       '@context': [Array],
+//       id: 'http://example.edu/credentials/3732',
+//       type: [Array],
+//       issuer: [Object],
+//       issuanceDate: '2010-01-01T19:23:24Z',
+//       credentialSubject: [Object],
+//       proof: [Object]
+//     },
+//   ]
+// }
+
 ```
+
+
+## Verify Verifiable Credential
+```javascript
+import { JsonWebSignature } from "@transmute/json-web-signature";
+import { documentLoader } from "./documentLoader.js";
+import { verifiable } from "@transmute/vc.js";
+import { resultCredential } from "./create.js";
+
+const result = await verifiable.credential.verify({
+  credential: resultCredential.items[0],
+  format: ["vc", "vc-jwt"],
+  documentLoader: documentLoader,
+  suite: [new JsonWebSignature()],
+});
+
+console.log("verify credential: ", result);
+
+// result
+// verify credential:  { verified: true }
+```
+
