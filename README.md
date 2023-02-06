@@ -83,6 +83,8 @@ console.log("create credential: ", resultCredential);
 //       credentialSubject: [Object],
 //       proof: [Object]
 //     },
+// ...
+// ...
 //   ]
 // }
 
@@ -127,6 +129,8 @@ console.log("create presentation: ", resultPresentation);
 //       holder: [Object],
 //       proof: [Object]
 //     },
+// ...
+// ...
 //   ]
 // }
 ```
