@@ -6,22 +6,22 @@ $ cd verifiable-credentials.w3c
 $ npm install
 ```
 Run command for create verifiable credential
-```
+```javascript
 node create.js
 ```
 
 Run command for create verifiable presentation
-```
+```javascript
 node createPresentation.js
 ```
 
 Run command for verify credential
-```
+```javascript
 node verifyCredential.js
 ```
 
 Run command for verify presentation
-```
+```javascript
 node verifyPresentation.js
 ```
 -----------------------------------------------------------
