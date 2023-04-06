@@ -6,7 +6,10 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "create": "nodemon ./create.js"
+    "create": "node --experimental-json-modules ./create.js",
+    "create-presentation": "node --experimental-json-modules ./createPresentation.js",
+    "verify-credential": "node --experimental-json-modules ./verifyCredential.js",
+    "verify-presentation": "node --experimental-json-modules ./verifyPresentation.js"
   },
   "author": "",
   "license": "ISC",

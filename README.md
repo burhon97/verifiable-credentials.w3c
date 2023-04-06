@@ -5,30 +5,36 @@ $ git clone https://github.com/burhon97/verifiable-credentials.w3c.git
 $ cd verifiable-credentials.w3c
 $ npm install
 ```
+
 - Run command for create verifiable credential
+
 ```
-node create.js
+node --experimental-json-modules create.js
 ```
 
 - Run command for create verifiable presentation
+
 ```
-node createPresentation.js
+node --experimental-json-modules createPresentation.js
 ```
 
 - Run command for verify credential
+
 ```
-node verifyCredential.js
+node --experimental-json-modules verifyCredential.js
 ```
 
 - Run command for verify presentation
+
 ```
-node verifyPresentation.js
+node --experimental-json-modules verifyPresentation.js
 ```
------------------------------------------------------------
+
+---
 
 # Usage
 
-## Create Verifiable Credential 
+## Create Verifiable Credential
 
 ```javascript
 import { JsonWebKey, JsonWebSignature } from "@transmute/json-web-signature";
@@ -87,10 +93,10 @@ console.log("create credential: ", resultCredential);
 // ...
 //   ]
 // }
-
 ```
 
 ## Create Verifiable Presentation
+
 ```javascript
 import { JsonWebKey, JsonWebSignature } from "@transmute/json-web-signature";
 import { documentLoader } from "./documentLoader.js";
@@ -136,6 +142,7 @@ console.log("create presentation: ", resultPresentation);
 ```
 
 ## Verify Presentation
+
 ```javascript
 import { JsonWebSignature } from "@transmute/json-web-signature";
 import { documentLoader } from "./documentLoader.js";
@@ -152,16 +159,15 @@ const result = await verifiable.presentation.verify({
 
 console.log("verify presentaion: ", result);
 
-
-// #result 
+// #result
 // verify presentaion:  {
 //   verified: true,
 //   presentation: { verified: true, results: [ [Object] ] }
 // }
 ```
 
-
 ## Verify Credential
+
 ```javascript
 import { JsonWebSignature } from "@transmute/json-web-signature";
 import { documentLoader } from "./documentLoader.js";
@@ -180,4 +186,3 @@ console.log("verify credential: ", result);
 // #result
 // verify credential:  { verified: true }
 ```
-
